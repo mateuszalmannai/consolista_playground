@@ -1,0 +1,27 @@
+# Tell spring there is no console, i.e. don't print any logs
+logging:
+#  pattern:
+#    console:
+#  level:
+#    org:
+#      springframework:
+#        shell: DEBUG
+
+spring:
+  main:
+    banner-mode: off
+  shell:
+    history:
+      enabled: true # Disable interactive mode
+    interactive:
+      enabled: true
+
+# contextual colors
+shell:
+  out:
+    info: CYAN
+    success: GREEN
+    warning: YELLOW
+    error: RED
+    standard: BRIGHT
+
